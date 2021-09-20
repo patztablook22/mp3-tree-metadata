@@ -1,6 +1,6 @@
 ## Summary
 
-A tool that helps me index pirated music files.
+A tool that helps me index pirated music.
 
 ## Dependencies
 
