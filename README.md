@@ -2,6 +2,11 @@
 
 A tool that helps me index pirated music files.
 
+## Dependencies
+
+- Ruby
+- id3v2
+
 ## Usage
 
 ```sh
