@@ -44,6 +44,7 @@ Dir.chdir ARGV[0]
 
 # for all artists
 Dir["*"].each do |artist|
+  
   # for all albums stored on a single mp3
   Dir["#{artist}/*.mp3"].each do |album_mp3|
     update_metadata(
@@ -52,9 +53,12 @@ Dir["*"].each do |artist|
     )
   end
 
+  # for all album directories
   Dir["#{artist}/*/"].each do |album_dir|
     album = File.basename(album_dir)
     album_dir = album_dir[0...-1]
+    
+    # for all song mp3s in the album
     Dir["#{album_dir}/*.mp3"].each do |song_mp3|
       update_metadata(
         song_mp3,
@@ -63,5 +67,4 @@ Dir["*"].each do |artist|
       )
     end
   end
-
 end
