@@ -1,15 +1,20 @@
+## Summary
+
 A tool that helps me index pirated music files.
 
-## usage
+## Usage
+
 ```sh
 cd mp3-tree-metadata
 ./indexer.rb path/to/my/music/tree
 ```
 
-## required tree structure
+## Required tree structure
 
-Either `root/Artist Name/Album Name/XX Song Name.mp3`, where XX is track number
+Either `root/Artist Name/Album Name/XX Song Name.mp3`, where XX is track number \
 Or `root/Artist Name/Album Name but stored as a single file.mp3`
+
+### Example tree
 
 ```
 ROOT/
