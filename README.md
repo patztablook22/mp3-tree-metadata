@@ -11,7 +11,7 @@ A tool that helps me index pirated music files.
 
 ```sh
 cd mp3-tree-metadata
-./indexer.rb path/to/my/music/tree
+./indexer.rb ~/path/to/my/music/tree
 ```
 
 ## Required tree structure
